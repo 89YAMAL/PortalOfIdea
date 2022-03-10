@@ -56,8 +56,6 @@
   border-style: solid;
   padding-top: 20px;
   padding-bottom: 20px;
-
-
 }
 
 .menu {
@@ -115,10 +113,7 @@
 
 .menu-burger {
   width: 25px;
-}
-
-.direct-speech {
-  max-width: 1200px;
+  height: 25px;
 }
 
 .content {
@@ -142,6 +137,9 @@
   margin-left: auto;
   margin-right: auto;
   padding: 40px 15px;
+  border: 1px solid #d9d9de;
+
+  max-width: 1200px;
 }
 
 .speech {
@@ -174,6 +172,110 @@
   text-decoration: none;
   color: gray;
 }
+
+.news-block {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 15px;
+  max-width: 1200px;
+}
+
+.news-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news {
+  font-family: PT Serif;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+  color: #00001e;
+}
+
+.all-news {
+  font-family: PT Serif;
+  font-weight: regular;
+  font-size: 15px;
+  color: rgb(27, 123, 210);
+}
+
+.news-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news-today {
+  width: 50%;
+  margin-top: 20px;
+  padding-right: 10px;
+}
+
+.news-list-text {
+  font-family: PT Serif;
+  font-weight: regular;
+  font-size: 16px;
+  text-decoration: none;
+  color: #00001e;
+}
+
+.news-list-text:hover {
+  color: rgb(27, 123, 210);
+}
+
+.news-list-time {
+  color: gray;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.footer {
+  background-color: #e5e5eb;
+  padding: 20px 100px;
+}
+
+.about {
+  text-align: center;
+}
+
+.project-team {
+  font-family: PT Serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: gray;
+}
+
+.contacts {
+  margin-top: 50px;
+  font-family: PT Serif;
+  font-weight: regular;
+  font-size: 14px;
+  color: gray;
+}
+
+.telegram, .instagram {
+  width: 40px;
+}
+
+.socials {
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icon {
+  list-style-type: none;
+}
+
+.icon:nth-child(2) {
+  margin-left: 5px;
+}
+
+
 
 
 
@@ -236,6 +338,8 @@
 
   .menu-box {
     padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: right;
   }
 
@@ -243,6 +347,9 @@
     display: inline-block;
   }
 
+  .text {
+    font-size: 16px;
+  }
 
   .menu-list {
     flex-direction: column;
@@ -272,16 +379,23 @@
     margin-top: 20px;
   }
 
-  .speech-boss {
-    font-size: 20px;
-  }
-
-  .text {
-    font-size: 14px;
-  }
-
   .position-boss {
       font-size: 12px;
   }
+
+  .news-today {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .all-news {
+    font-size: 13px
+  }
+
+  .news-block {
+    padding-top: 40px;
+  }
+
+
 
 }
