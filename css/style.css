@@ -232,8 +232,9 @@
 }
 
 .footer {
-  background-color: #e5e5eb;
+  background-color: hsl(207, 47%, 43%);
   padding: 20px 100px;
+  margin-bottom: 20px;
 }
 
 .about {
@@ -244,15 +245,15 @@
   font-family: PT Serif;
   font-weight: bold;
   font-size: 14px;
-  color: gray;
+  color: white;
 }
 
 .contacts {
-  margin-top: 50px;
+  margin-top: 20px;
   font-family: PT Serif;
   font-weight: regular;
   font-size: 14px;
-  color: gray;
+  color: white;
 }
 
 .telegram, .instagram {
