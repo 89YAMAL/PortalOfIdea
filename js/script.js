@@ -12,9 +12,9 @@ $('body').bind('touchstart', function () {});
 
 
 // function PopUpShow() {
-  $(".hidden-popup").show();
-}
+//   $(".hidden-popup").show();
+// }
 
 // function PopUpHide() {
-  $(".hidden-popup").hide();
-}
+//   $(".hidden-popup").hide();
+// }
