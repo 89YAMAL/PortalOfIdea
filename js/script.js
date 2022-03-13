@@ -11,10 +11,10 @@ $(function() {
 $('body').bind('touchstart', function () {});
 
 
-function PopUpShow() {
+// function PopUpShow() {
   $(".hidden-popup").show();
 }
 
-function PopUpHide() {
+// function PopUpHide() {
   $(".hidden-popup").hide();
 }
