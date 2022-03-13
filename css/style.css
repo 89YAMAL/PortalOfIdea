@@ -25,6 +25,10 @@
   font-style: italic;
 }
 
+body {
+  -webkit-text-size-adjust: none;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -313,37 +317,6 @@
     display: none;
   }
 }
-
-@media (min-width: 691px) and (max-width: 960px) and and (orientation: landscape) {
-  .position-boss {
-      font-size: 12px;
-  }
-
-  .project-team, .contacts {
-    font-size: 14px;
-  }
-
-  .menu-list-item:nth-child(n+2) {
-    margin-left: 10px;
-  }
-
-  .header-logo {
-    width: 50px;
-  }
-
-  .name {
-    font-size: 22px;
-  }
-
-  .menu-link {
-    font-size: 16px;
-  }
-
-  .menu-burger {
-    display: none;
-  }
-}
-
 
 @media (max-width: 690px) {
   .container {
