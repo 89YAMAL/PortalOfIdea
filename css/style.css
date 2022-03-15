@@ -5,25 +5,19 @@
 }
 
 @font-face {
-  font-family: PT Serif ;
-  src: url(../fonts/pt-serif.regular.ttf);
+  font-family: "PT Serif" ;
+  src: url(../fonts/OpenSans-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: PT Serif;
-  src: url(../fonts/pt-serif.bold.ttf);
+  font-family: "PT Serif";
+  src: url(../fonts/OpenSans-Bold.ttf);
   font-weight: 700;
   font-style: normal;
 }
 
-@font-face {
-  font-family: PT Serif;
-  src: url(../fonts/pt-serif.italic.ttf);
-  font-weight: 400;
-  font-style: italic;
-}
 
 body {
   -webkit-text-size-adjust: none;
@@ -47,11 +41,15 @@ body {
 }
 
 .name {
-  font-family: PT Serif;
+  font-family: "PT Serif", Arial, sans-serif;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
   color: #00001e;
+}
+
+.logo {
+  text-decoration: none;
 }
 
 .menu-box {
@@ -78,7 +76,7 @@ body {
 }
 
 .menu-link {
-  font-family: PT Serif;
+  font-family: "PT Serif", Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
   text-align: center;
@@ -151,7 +149,7 @@ body {
 }
 
 .speech-boss {
-  font-family: PT Serif;
+  font-family: "PT Serif", Arial, sans-serif;
   font-weight: bold;
   font-size: 22px;
   text-decoration: none;
@@ -160,7 +158,7 @@ body {
 }
 
 .text {
-  font-family: PT Serif;
+  font-family: "PT Serif", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   text-decoration: none;
@@ -169,10 +167,10 @@ body {
 }
 
 .position-boss {
-  font-family: PT Serif;
+  font-family: "PT Serif", Arial, sans-serif;
   font-weight: 400;
-  font-style: italic;
-  font-size: 14px;
+  font-style: regular;
+  font-size: 12px;
   text-decoration: none;
   color: gray;
 }
@@ -192,7 +190,7 @@ body {
 }
 
 .news {
-  font-family: PT Serif;
+  font-family: "PT Serif", Arial, sans-serif;
   font-weight: bold;
   font-size: 22px;
   text-decoration: none;
@@ -200,7 +198,7 @@ body {
 }
 
 .all-news {
-  font-family: PT Serif;
+  font-family: "PT Serif", Arial, sans-serif;
   font-weight: regular;
   font-size: 15px;
   color: rgb(27, 123, 210);
@@ -218,7 +216,7 @@ body {
 }
 
 .news-list-text {
-  font-family: PT Serif;
+  font-family: "PT Serif", Arial, sans-serif;
   font-weight: regular;
   font-size: 16px;
   text-decoration: none;
@@ -246,7 +244,7 @@ body {
 }
 
 .project-team {
-  font-family: PT Serif;
+  font-family: "PT Serif", Arial, sans-serif;
   font-weight: bold;
   font-size: 14px;
   color: white;
@@ -295,22 +293,9 @@ body {
   }
 }
 
-
-@media (min-width: 691px) and (max-width: 960px) {
+@media (min-width: 761px) and (max-width: 960px) {
   .menu-list-item:nth-child(n+2) {
     margin-left: 10px;
-  }
-
-  .header-logo {
-    width: 50px;
-  }
-
-  .name {
-    font-size: 22px;
-  }
-
-  .menu-link {
-    font-size: 16px;
   }
 
   .menu-burger {
@@ -318,7 +303,7 @@ body {
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 760px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -327,10 +312,14 @@ body {
   .header-logo {
     width: 70px;
     margin-right: 0;
+    margin-bottom: 15px;
   }
 
   .name {
-    font-size: 22px;
+    font-size: 26px;
+    text-align: center;
+  }
+  .logo {
     text-align: center;
   }
 

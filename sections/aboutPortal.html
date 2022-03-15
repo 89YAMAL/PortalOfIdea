@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>submitAnIdea</title>
-  <link rel="stylesheet" href="./submitAnIdea.css">
+  <link rel="stylesheet" href="./aboutPortal.css">
 </head>
 
 <body>
@@ -26,10 +26,10 @@
       <nav class="menu">
         <ul class="menu-list">
           <li class="menu-list-item">
-            <a class="menu-link" href="../sections/aboutPortal.html">О портале</a>
+            <a class="menu-link focus" href="#0">О портале</a>
           </li>
           <li class="menu-list-item">
-            <a class="menu-link focus" href="#0">Предложить идею</a>
+            <a class="menu-link" href="../sections/submitAnIdea.html">Предложить идею</a>
           </li>
           <li class="menu-list-item">
             <a class="menu-link" href="#0">Реестр идей</a>
@@ -48,30 +48,10 @@
     </div>
   </header>
   <main class="content">
-    <h2 class="form_of_idea">Форма отправки идеи по оптимизации процесса</h2>
-    <form class="form_content">
-      <div class="form_group">
-        <label class="label">
-          <p class="data">Имя</p>
-          <input type="text" class="name_text" placeholder="Например: Иван" required></input>
-        </label>
-        <label class="label">
-          <p class="data">E-mail</p>
-          <input type="email" class="name_text" placeholder="Например: ivanov@ya.ru" required></input>
-        </label>
-        <label class="label">
-          <p class="data">Заголовок</p>
-          <textarea class="name_text textarea" placeholder="Например: Мобильное рабочее место" required></textarea>
-        </label>
-        <label class="label">
-          <p class="data">Описание</p>
-          <textarea class="name_text textarea_description" placeholder="Опишите подробно суть идеи" required></textarea>
-        </label>
-      </div>
-      <div class="button_form">
-        <button class="button-submit" type="submit" onclick="PopUpShow()">Отправить</button>
-      </div>
-    </form>
+    <h2 class="mission">Миссия</h2>
+    <h2 class="purposes">Цели</h2>
+    <h2 class="tasks">Задачи</h2>
+
   </main>
   <footer class="footer">
     <div class="about">
@@ -91,11 +71,6 @@
             </a>
         </li>
   </footer>
-  <div class="hidden-popup">
-    <div class="popup" onclick="PopUpHide()">
-      <span class="title-name-popup">Отправлено</h3>
-    </div>
-  </div>
   <script src="../js/jquery-3.6.0.min.js"></script>
   <script src="../js/script.js"></script>
 </body>
