@@ -121,14 +121,24 @@ body {
   height: 25px;
 }
 
+.dashbord {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doughnut {
+  width: 45%;
+  position: relative;
+}
+
 .content {
-  padding: 40px 15px;
+  padding: 20px 15px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.tasks, .mission, .stakeholder {
+.tasks, .mission, .stakeholder, .statistic {
   font-family: "PT Serif", Arial, sans-serif;
   font-weight: bold;
   font-size: 22px;
@@ -150,7 +160,35 @@ body {
 .stakeholder_container {
   display: flex;
   flex-direction: row;
+  }
+
+.donut-inner {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -70%);
 }
+
+.donut-inner h5 {
+  font-family: "PT Serif", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #66666a;
+}
+
+
+/* .show {
+  opacity: 0;
+  transform: translateY(100%);
+  transition-delay: 1s;
+}
+
+.show.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0%);
+} */
+
 
 .stakeholder_image {
   max-width: 250px;
