@@ -245,9 +245,9 @@ body {
 }
 
 .picture {
-  width: 25px;
-  height: 25px;
-  background-image: url("../images/pngwing.com (22).png");
+  width: 35px;
+  height: 35px;
+  background-image: url("../images/pngwing.com (23).png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -275,8 +275,8 @@ body {
   width: 35px;
   background-color: rgb(220, 230, 242);
   font-family: "PT Serif", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: regular;
   color: #00001e;
 }
 

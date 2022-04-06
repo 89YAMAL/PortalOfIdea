@@ -99,7 +99,7 @@ const stakeholderquantity = new Chart(ctx, {
       plugins: {
            title: {
                display: true,
-               text: 'Стейкхолдеры',
+               text: 'Внутренние пользователи',
                position: 'top',
                font: {
                  size: 16,
@@ -137,7 +137,7 @@ const quantity = new Chart(ctx_2, {
       plugins: {
            title: {
                display: true,
-               text: 'Категории стейкхолдеров',
+               text: 'Категории пользователей',
                position: 'top',
                font: {
                  size: 16,
