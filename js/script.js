@@ -188,7 +188,7 @@ const stakeholderbar = new Chart(ctx_4, {
         fill: false,
         backgroundColor: [
            'rgba(255, 99, 132, 0.8)',
-           'rgb(255, 205, 86, 0.8)',
+           'rgb(255, 159, 64, 0.8)',
            'rgb(255, 205, 86, 0.8)',
            'rgb(255, 205, 86, 0.8)',
            'rgb(255, 205, 86, 0.8)',

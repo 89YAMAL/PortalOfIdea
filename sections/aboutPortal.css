@@ -260,9 +260,14 @@ body {
   background-color: white;
 }
 
+.picture_container {
+  text-align: center;
+}
+
 .picture {
-  width: 100%;
+  width: 80%;
   background-color: white;
+  text-align: center;
 }
 
 .stakeholder_text {
