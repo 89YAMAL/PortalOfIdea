@@ -552,3 +552,7 @@ body {
   .picture {
     align-self: center;
   }
+
+  .popup {
+    width: 90%;
+  }
