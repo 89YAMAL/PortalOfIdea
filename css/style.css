@@ -36,8 +36,7 @@ body {
 }
 
 .header-logo {
-  width: 70px;
-  margin-right: 30px;
+  width: 190px;
 }
 
 .name {
@@ -310,9 +309,8 @@ body {
   }
 
   .header-logo {
-    width: 70px;
+    width: 150px;
     margin-right: 0;
-    margin-bottom: 15px;
   }
 
   .name {
