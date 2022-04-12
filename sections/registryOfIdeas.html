@@ -138,11 +138,11 @@
       <div class="finished start-anim">
         <div class="project">
           <div class="block_theme">
-            <span class="theme">Здравоохранение</span>
-            <div class="stage">Внедрение</div>
+            <span class="theme">Экономика</span>
+            <div class="stage" style="background-color: rgb(49, 186, 50);">Завершен</div>
           </div>
           <div class="description_like">
-            <span class="description">Оптимизация процесса записи на прием к врачу</span>
+            <span class="description">Оптимизация процесса мониторинга цен</span>
             <div class="like">
               <button class="picture" id="likebtn01"></button>
               <input type="number" class="count" id="input01" value="45" name=""></input>
@@ -151,18 +151,18 @@
           <div class="time_detailes">
             <div class="time">
               <span class="time_text">Срок реализации:</span>
-              <span class="dates">05.2022 - 05.2023</span>
+              <span class="dates">01.2022 - 04.2022</span>
             </div>
-            <a class="details" href="#0" onclick="PopUpShow()">Подробнее</a>
+            <a class="details" href="#0" onclick="PopUpShow01()">Подробнее</a>
           </div>
         </div>
         <div class="project">
           <div class="block_theme">
-            <span class="theme">Здравоохранение</span>
-            <div class="stage">Внедрение</div>
+            <span class="theme">IT, Образование</span>
+            <div class="stage" style="background-color: rgb(49, 186, 50);">Завершен</div>
           </div>
           <div class="description_like">
-            <span class="description">Оптимизация процесса записи на прием к врачу</span>
+            <span class="description">Реализация проекта IT-завод</span>
             <div class="like">
               <button class="picture" id="likebtn02"></button>
               <input type="number" class="count" id="input02" value="22" name=""></input>
@@ -171,18 +171,18 @@
           <div class="time_detailes">
             <div class="time">
               <span class="time_text">Срок реализации:</span>
-              <span class="dates">05.2022 - 05.2023</span>
+              <span class="dates">11.2021 - 05.2022</span>
             </div>
-            <a class="details" href="#0" onclick="PopUpShow()">Подробнее</a>
+            <a class="details" href="#0" onclick="PopUpShow02()">Подробнее</a>
           </div>
         </div>
         <div class="project">
           <div class="block_theme">
-            <span class="theme">Здравоохранение</span>
-            <div class="stage">Внедрение</div>
+            <span class="theme">Государственное управление</span>
+            <div class="stage" style="background-color: rgb(49, 186, 50);">Завершен</div>
           </div>
           <div class="description_like">
-            <span class="description">Оптимизация процесса записи на прием к врачу</span>
+            <span class="description">Внедрение визуальных схем предоставления услуг (реализации функций) в системе госуправления региона</span>
             <div class="like">
               <button class="picture" id="likebtn03"></button>
               <input type="number" class="count" id="input03" value="18" name=""></input>
@@ -191,15 +191,15 @@
           <div class="time_detailes">
             <div class="time">
               <span class="time_text">Срок реализации:</span>
-              <span class="dates">05.2022 - 05.2023</span>
+              <span class="dates">02.2022 - 05.2022</span>
             </div>
-            <a class="details" href="#0" onclick="PopUpShow()">Подробнее</a>
+            <a class="details" href="#0" onclick="PopUpShow03()">Подробнее</a>
           </div>
         </div>
         <div class="project">
           <div class="block_theme">
             <span class="theme">Здравоохранение</span>
-            <div class="stage">Внедрение</div>
+            <div class="stage" style="background-color: rgb(49, 186, 50);">Завершен</div>
           </div>
           <div class="description_like">
             <span class="description">Оптимизация процесса записи на прием к врачу</span>
@@ -211,7 +211,7 @@
           <div class="time_detailes">
             <div class="time">
               <span class="time_text">Срок реализации:</span>
-              <span class="dates">05.2022 - 05.2023</span>
+              <span class="dates">05.2021 - 01.2022</span>
             </div>
             <a class="details" href="#0" onclick="PopUpShow()">Подробнее</a>
           </div>
@@ -238,60 +238,138 @@
         </li>
   </footer>
   <div class="hidden-popup" id="01">
+    <div class="popup" onclick="PopUpHide01()">
+      <h3 class="title-name-popup">Суть идеи</h3>
+      <p class="about_idea">
+        Мониторинг цен является несложным процессом сбора еженедельной информации о ценах по магазинам с участием всего двух человек (специалиста и водителя).По результатам диагностики текущего состояния установлено. Мониторинг осуществлялся два раза в неделю:
+    	  <br>Выявлены следующие проблемы:
+    		<br>1. Разная выкладка товаров, то есть в каждом магазине свой маршрут, а таблицы для сбора информации одинаковые;
+    		<br>2. Разная фасовка товара. Для мониторинга приняты объемы 1 литр, 1 кг, 10 шт., а фактическая фасовка может быть иная 800 гр, 950 мл. Следовательно специалист записывал на бумагу фактические данные,  а на рабочем месте пересчитывал;
+    		<br>3. Дублирование одних и тех же действий, то есть специалист записывал на бумагу, заносил в таблицу, рассчитывал среднюю, сверял с предыдущей неделей и только после этого вносит в ИАС;
+    		<br>4. Технические сбои при внесении данных в информационные системы.
+    		<br>В результате весь процесс занимал более 8 часов неделю или 23% рабочего времени специалиста.
+
+    		<br>По результатам анализа муниципальной проектной командой было предложено автоматизировать процесс.
+    		<br>В мае 2021 разработана и апробирована программа «Мониторинг цен», состоящая из разделов:
+      	<br>1. Внесение данных
+      	<br>2. Отчеты
+      	<br>3. Графики
+        <br>4. Справочники (могут дополнятся )
+  		  <br>Для каждого магазина настраивается индивидуальный порядок внесения данных -  «маршрут».После занесения данных производится выгрузка отчета, в котором рассчитаны средние цены и отмечены цветом изменения к предыдущему отчету, что значительно упрощает внесение данных в информационные системы. Также можно сформировать графики.
+      		<br>Внедрение программного продукта позволило сократить более чем в два раз трудозатраты на выполнение мониторинга цен.
+      		<br>Программа является универсальной и может быть тиражирована в другие муниципалитеты.
+      </p>
+
+    </div>
+  </div>
+  <div class="hidden-popup" id="02">
+    <div class="popup" onclick="PopUpHide02()">
+      <h3 class="title-name-popup">Суть идеи</h3>
+      <p class="about_idea">
+        <br>Создание микрокомпаний в ССУЗах автономного округа, работающих в сфере информационных технологий.
+        <br>Актуальная проблематика:
+        <br>1.	Недостаток успешных кейсов среди выпускников;
+        <br>2.	Отсутствие практического опыта по выбранной специальности;
+        <br>3.	«Подработка» студентами не по специальности;
+        <br>4.	Фактическое привлечение сторонних организаций (специалистов);
+        <br>5.	Регион недостаточно использует потенциал молодых специалистов;
+        <br>6.	Отсутствует единая площадка для совместной работы/обмена опытом.
+        <br>  Дизайн решений (предложения и эффекты):
+        <br>1.	Выявление потребности по набору преподавателей (профильных специалистов);
+        <br>2.	Создание микропредприятий, решающих «простые задачи» по информатизации;
+        <br>3.	Повышение вовлеченности студентов в будущую работу, развитие, «прокачка»;
+        <br>4.	Формирование реального ИТ-сообщества;
+        <br>5.	Закрытие потребности (без привлечения подрядчиков из других регионов);
+        <br>6.	Экономия бюджета;
+        <br>7.	Реальное наставничество.
+        <br>На этапе прототипа:
+        <br>Создание нового юридического лица будет способствовать и стимулировать:
+        <br>1.	решению реальных задач;
+        <br>2.	получение практического опыта;
+        <br>3.	финансовому вознаграждению студентов;
+        <br>4.	повышению интереса к будущей профессии (работе).
+        <br>Пример решаемых задач:
+        <br>модернизация сайтов - копирайтер (разработчик программного обеспечения);
+        <br>создание чат-ботов (разработчик программного обеспечения);
+        <br>обслуживание оргтехники (системный администратор);
+        <br>создание ЛВС (наладчик - техник).
+        <br>Создание коворкинга (ИТ-площадки).
+        <br>Место: на базе ССУЗов в крупнейших городах автономного округа (Ноябрьск, Салехард).
+        <br>Единый стандарт оформления и оснащения.
+        <br>Руководитель: преподаватель/привлеченный специалист. Дипломированный специалист с компетенциями.
+        <br>Студент проходит через анкетирование (систему оценки)/рекомендации преподавателя.
+        <br>Куратор проекта: ДИТИС.
+        <br>Аренда - 0, все в собственности колледжа ЯМК (Ноябрьский ИТ-колледж).
+        <br>Требуется расчет затрат и модель.
+      </p>
+
+    </div>
+  </div>
+  <div class="hidden-popup" id="03">
+    <div class="popup" onclick="PopUpHide03()">
+      <h3 class="title-name-popup">Суть идеи</h3>
+      <p class="about_idea">
+
+      </p>
+
+    </div>
+  </div>
+  <div class="hidden-popup" id="99">
     <div class="popup" onclick="PopUpHide()">
-      <span class="title-name-popup">Необходимо описать суть идеи</h3>
+      <h3 class="title-name-popup">Суть идеи</h3>
+      <p class="about_idea"></p>
     </div>
   </div>
   <script src="../js/jquery-3.6.0.min.js"></script>
   <script src="../js/script.js"></script>
   <script>
-  let likebtn1 = document.querySelector('#likebtn1');
-  let input1 = document.querySelector('#input1');
-  likebtn1.addEventListener('click', function () {
-    input1.value = parseInt(input1.value) + 1;
-  });
+    let likebtn1 = document.querySelector('#likebtn1');
+    let input1 = document.querySelector('#input1');
+    likebtn1.addEventListener('click', function () {
+      input1.value = parseInt(input1.value) + 1;
+    });
 
-  let likebtn2 = document.querySelector('#likebtn2');
-  let input2 = document.querySelector('#input2');
-  likebtn2.addEventListener('click', function () {
-    input2.value = parseInt(input2.value) + 1;
-  });
+    let likebtn2 = document.querySelector('#likebtn2');
+    let input2 = document.querySelector('#input2');
+    likebtn2.addEventListener('click', function () {
+      input2.value = parseInt(input2.value) + 1;
+    });
 
-  let likebtn3 = document.querySelector('#likebtn3');
-  let input3 = document.querySelector('#input3');
-  likebtn3.addEventListener('click', function () {
-    input3.value = parseInt(input3.value) + 1;
-  });
+    let likebtn3 = document.querySelector('#likebtn3');
+    let input3 = document.querySelector('#input3');
+    likebtn3.addEventListener('click', function () {
+      input3.value = parseInt(input3.value) + 1;
+    });
 
-  let likebtn4 = document.querySelector('#likebtn4');
-  let input4 = document.querySelector('#input4');
-  likebtn4.addEventListener('click', function () {
-    input4.value = parseInt(input4.value) + 1;
-  });
+    let likebtn4 = document.querySelector('#likebtn4');
+    let input4 = document.querySelector('#input4');
+    likebtn4.addEventListener('click', function () {
+      input4.value = parseInt(input4.value) + 1;
+    });
 
-  let likebtn01 = document.querySelector('#likebtn01');
-  let input01 = document.querySelector('#input01');
-  likebtn01.addEventListener('click', function () {
-    input01.value = parseInt(input01.value) + 1;
-  });
+    let likebtn01 = document.querySelector('#likebtn01');
+    let input01 = document.querySelector('#input01');
+    likebtn01.addEventListener('click', function () {
+      input01.value = parseInt(input01.value) + 1;
+    });
 
-  let likebtn02 = document.querySelector('#likebtn02');
-  let input02 = document.querySelector('#input02');
-  likebtn02.addEventListener('click', function () {
-    input02.value = parseInt(input02.value) + 1;
-  });
+    let likebtn02 = document.querySelector('#likebtn02');
+    let input02 = document.querySelector('#input02');
+    likebtn02.addEventListener('click', function () {
+      input02.value = parseInt(input02.value) + 1;
+    });
 
-  let likebtn03 = document.querySelector('#likebtn03');
-  let input03 = document.querySelector('#input03');
-  likebtn03.addEventListener('click', function () {
-    input03.value = parseInt(input03.value) + 1;
-  });
+    let likebtn03 = document.querySelector('#likebtn03');
+    let input03 = document.querySelector('#input03');
+    likebtn03.addEventListener('click', function () {
+      input03.value = parseInt(input03.value) + 1;
+    });
 
-  let likebtn04 = document.querySelector('#likebtn04');
-  let input04 = document.querySelector('#input04');
-  likebtn04.addEventListener('click', function () {
-    input04.value = parseInt(input04.value) + 1;
-  });
+    let likebtn04 = document.querySelector('#likebtn04');
+    let input04 = document.querySelector('#input04');
+    likebtn04.addEventListener('click', function () {
+      input04.value = parseInt(input04.value) + 1;
+    });
 </script>
 </body>
 </html>

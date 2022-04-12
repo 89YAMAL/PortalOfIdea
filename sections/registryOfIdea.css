@@ -149,11 +149,11 @@ body {
 }
 
 .button-submit:focus {
-  background-color: #323232;
+  background-color: rgb(228, 108, 10);
 }
 
 .button-submit:hover {
-  background-color: #323232;
+  background-color: rgb(228, 108, 10);
 }
 
 .button-submit:nth-child(2) {
@@ -168,7 +168,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  height: 490px;
+  height: 700px;
   position: relative;
 }
 
@@ -361,18 +361,22 @@ body {
 }
 
 .popup {
-  width: 30%;
+  width: 50%;
+  height: 50%;
   background-color: #ffffff;
-  padding: 20px 10px;
+  padding: 20px 20px;
   position: relative;
-  color: #00001e;
+  /* color: #00001e;
   font-weight: 700;
   font-family: "PT Serif", Arial, sans-serif;
-  text-align: center;
+  text-align: center; */
   border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  top: 49%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-x: scroll;
 }
 
 .hidden-popup::after {
@@ -385,6 +389,21 @@ body {
   background-color: black;
   opacity: 0.60;
   z-index: -1;
+}
+
+.title-name-popup {
+  font-weight: 700;
+  font-family: "PT Serif", Arial, sans-serif;
+  text-align: center;
+  color: #00001e;
+  font-size: 14px;
+}
+
+.about_idea {
+  font-family: "PT Serif", Arial, sans-serif;
+  color: #00001e;
+  text-align: justify;
+  font-size: 12px;
 }
 
 

@@ -48,7 +48,6 @@
     </div>
   </header>
   <main class="content">
-    <!-- <h2 class="stakeholder">Боли «Стейкхолдеров»</h2> -->
     <div class="about_portal_container">
       <div class="about_portal_image">
         <img src="../images/d_122068.png" class="picture1">
@@ -60,14 +59,14 @@
     </div>
     <h2 class="process">Процессы</h2>
     <div class="process_text">
-      <p>Процесс представляет собой совокупность действий, повторяемых во времени, с конкретным началом и концом, целью которых является создание ценности для внешних и внутренних клиентов.</p>
-      <p>При процессном управлении деятельность органов власти рассматривается как сеть взаимосвязанных процессов, каждый из которых участвует в удовлетворение запроса клиента органов власти.</p>
+      <p style="text-indent: 20px; text-align: justify;">Процесс представляет собой совокупность действий, повторяемых во времени, с конкретным началом и концом, целью которых является создание ценности для внешних и внутренних клиентов.</p>
+      <p style="text-indent: 20px; text-align: justify;">При процессном управлении деятельность органов власти рассматривается как сеть взаимосвязанных процессов, каждый из которых участвует в удовлетворение запроса клиента органов власти.</p>
     </div>
     <img src="../images/222.png" class="picture">
     <div class="process_text">
-      <p>Cнижение потерь времени и ресурсов является одной их главных задач в процессном управлении. Органы власти должны работать быстрее и качественнее, сокращать сроки всех внутренних и внешних рабочих процессов. Главным результатом должны стать простота и комфорт взаимодействия граждан и бизнеса с государственной системой.</p>
+      <p style="text-indent: 20px; text-align: justify;">Cнижение потерь времени и ресурсов является одной их главных задач в процессном управлении. Органы власти должны работать быстрее и качественнее, сокращать сроки всех внутренних и внешних рабочих процессов. Главным результатом должны стать простота и комфорт взаимодействия граждан и бизнеса с государственной системой.</p>
     </div>
-    <h2 class="statistic">Немного статистики</h2>
+    <h2 class="statistic">Стейкхолдеры</h2>
     <div class="dashbord">
       <div class="doughnut">
         <canvas id="stakeholderquantity" width="500" height="500"></canvas>
@@ -88,9 +87,18 @@
         </div>
       </div>
     </div>
-    <!-- <h2 class="stakeholder">Боли «Стейкхолдеров»</h2>
+    <h2 class="stakeholder">Результаты исследования</h2>
     <div class="stakeholder_container">
-      <div class="stakeholder_image">
+      <div class="bar_1">
+        <canvas id="stakeholderbar" width="500" height="300"></canvas>
+      </div>
+      <div class="bar_phone">
+        <canvas id="stakeholderbar_phone" width="500" height="300"></canvas>
+      </div>
+      <div class="bar_2">
+        <canvas id="stakeholderbar2" width="500" height="300"></canvas>
+      </div>
+      <!-- <div class="stakeholder_image">
         <img src="../images/pngwing.com (13).png" class="picture">
       </div>
       <div class="stakeholder_text">
@@ -99,20 +107,18 @@
         <p>Отсутствие возможности прямого общения с руководством региона</p>
         <p>Не хватает внутренних и временных ресурсов на выполнение поставленных руководством региона новых задач</p>
         <p>Дублирование информации (запросов)</p>
+      </div> -->
+    </div>
+    <h2 class="experience">Опыт других регионов</h2>
+    <div class="experience_container">
+      <div class="experience_text">
+        <img src="../images/Len obl.jpg" style="width: 100px;"/>
+        <a class="exp" href="http://process.lenreg.ru/">Ленинградская область</a>
+        <img class="img" src="../images/voronegskaya_oblast.jpg" style="width: 100px;"/>
+        <a class="exp" href="http://government.itcvo.ru/">Воронежская область</a>
       </div>
     </div>
-    <h2 class="mission">Цели</h2>
-    <div class="mission_container">
-      <div class="mission_text">
-        <p>Стимулирование изменений в привычных (повседневных) рабочих процессах</p>
-        <p>Выявление областей требующих оптимизации</p>
-        <p>Тиражирование накопленного опыта в решении «ежедневных» задач</p>
-      </div>
-      <div class="mission_image">
-        <img src="../images/pngwing.com (15).png" class="picture">
-      </div>
-    </div>
-    <h2 class="tasks">Задачи</h2> -->
+    <!-- <h2 class="tasks">Задачи</h2> -->
   </main>
   <footer class="footer">
     <div class="about">
@@ -134,6 +140,8 @@
   </footer>
   <script src="../js/jquery-3.6.0.min.js"></script>
   <script src="../js/chart.min.js"></script>
+  <script src="../js/chartjs-plugin-datalabels.min.js"></script>
   <script src="../js/script.js"></script>
+
 </body>
 </html>

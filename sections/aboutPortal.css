@@ -132,6 +132,20 @@ body {
   position: relative;
 }
 
+.donut-inner {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, 50%);
+}
+
+.donut-inner h5 {
+  font-family: "PT Serif", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #66666a;
+}
+
 .content {
   padding: 40px 15px;
   max-width: 1200px;
@@ -139,7 +153,7 @@ body {
   margin-right: auto;
 }
 
-.tasks, .mission, .stakeholder, .statistic, .process {
+.tasks, .experience, .stakeholder, .statistic, .process {
   font-family: "PT Serif", Arial, sans-serif;
   font-weight: bold;
   font-size: 22px;
@@ -154,27 +168,35 @@ body {
   justify-content: center;
 }
 
-.stakeholder:nth-child(1) {
-  margin-top: 10px;
-}
-
 .stakeholder_container {
   display: flex;
-  flex-direction: row;
+  flex-direction:column;
+  align-self: center;
+
   }
 
-.donut-inner {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, 50%);
+.bar_1 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.bar_1 {
+  display: inline;
 }
 
-.donut-inner h5 {
-  font-family: "PT Serif", Arial, sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  color: #66666a;
+.bar_phone {
+  display:none;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bar_2 {
+  margin-top: 60px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* .show {
@@ -257,10 +279,9 @@ p {
   margin-bottom: 10px;
 }
 
-.mission_container {
+.mission_experience {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .mission_image {
@@ -268,15 +289,25 @@ p {
   margin-left: 25px;
 }
 
-.mission_text {
+.experience_text {
   font-family: "PT Serif", Arial, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #00001e;
+  font-weight: 700;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  line-height: 30px;
+  text-decoration: none;
 }
+
+.exp {
+  color: #00001e;
+}
+
+.img {
+  margin-top: 50px;
+}
+
 
 .footer {
   background-color: hsl(207, 47%, 43%);
@@ -411,6 +442,39 @@ p {
 
     .dashbord {
       justify-content: center;
+    }
+
+    .bar_1 {
+      display: none;
+    }
+
+    .bar_phone {
+      display: inline;
+    }
+
+    .bold {
+      font-size: 14px;
+    }
+
+    .about_portal_text, .process_text {
+      font-size: 13px;
+    }
+
+    .process, .statistic, .stakeholder, .experience {
+      font-size: 14px;
+    }
+
+    .project-team, .contacts {
+      font-size: 12px;
+    }
+
+    .experience_text {
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .exp {
+      font-size: 12px;
     }
 
   }

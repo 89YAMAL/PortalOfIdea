@@ -24,61 +24,37 @@ $(function() {
 });
 
 
-function PopUpShow() {
+function PopUpShow01() {
   $("#01").show();
 };
 
-function PopUpHide() {
+function PopUpHide01() {
   $("#01").hide();
 };
 
-// let likebtn1 = document.querySelector('#likebtn1');
-// let input1 = document.querySelector('#input1');
-// likebtn1.addEventListener('click', function () {
-//   input1.value = parseInt(input1.value) + 1;
-// });
-//
-// let likebtn2 = document.querySelector('#likebtn2');
-// let input2 = document.querySelector('#input2');
-// likebtn2.addEventListener('click', function () {
-//   input2.value = parseInt(input2.value) + 1;
-// });
-//
-// let likebtn3 = document.querySelector('#likebtn3');
-// let input3 = document.querySelector('#input3');
-// likebtn3.addEventListener('click', function () {
-//   input3.value = parseInt(input3.value) + 1;
-// });
-//
-// let likebtn4 = document.querySelector('#likebtn4');
-// let input4 = document.querySelector('#input4');
-// likebtn4.addEventListener('click', function () {
-//   input4.value = parseInt(input4.value) + 1;
-// });
-//
-// let likebtn01 = document.querySelector('#likebtn01');
-// let input01 = document.querySelector('#input01');
-// likebtn01.addEventListener('click', function () {
-//   input01.value = parseInt(input01.value) + 1;
-// });
-//
-// let likebtn02 = document.querySelector('#likebtn02');
-// let input02 = document.querySelector('#input02');
-// likebtn02.addEventListener('click', function () {
-//   input02.value = parseInt(input02.value) + 1;
-// });
-//
-// let likebtn03 = document.querySelector('#likebtn03');
-// let input03 = document.querySelector('#input03');
-// likebtn03.addEventListener('click', function () {
-//   input03.value = parseInt(input03.value) + 1;
-// });
-//
-// let likebtn04 = document.querySelector('#likebtn04');
-// let input04 = document.querySelector('#input04');
-// likebtn04.addEventListener('click', function () {
-//   input04.value = parseInt(input04.value) + 1;
-// });
+function PopUpShow02() {
+  $("#02").show();
+};
+
+function PopUpHide02() {
+  $("#02").hide();
+};
+
+function PopUpShow03() {
+  $("#03").show();
+};
+
+function PopUpHide03() {
+  $("#03").hide();
+};
+
+function PopUpShow() {
+  $("#99").show();
+};
+
+function PopUpHide() {
+  $("#99").hide();
+};
 
 const ctx = document.getElementById('stakeholderquantity').getContext('2d');
 const stakeholderquantity = new Chart(ctx, {
@@ -99,10 +75,10 @@ const stakeholderquantity = new Chart(ctx, {
       plugins: {
            title: {
                display: true,
-               text: 'Внутренние пользователи',
+               text: 'Внутренние "Стейкхолдеры"',
                position: 'top',
                font: {
-                 size: 16,
+                 size: 14,
                },
                padding: {
                  bottom: 30,
@@ -137,10 +113,10 @@ const quantity = new Chart(ctx_2, {
       plugins: {
            title: {
                display: true,
-               text: 'Категории пользователей',
+               text: 'Категории "Стейкхолдеров"',
                position: 'top',
                font: {
-                 size: 16,
+                 size: 14,
                },
                padding: {
                  bottom: 30,
@@ -176,7 +152,7 @@ const quantity2 = new Chart(ctx_3, {
                text: 'Объекты оптимизации',
                position: 'top',
                font: {
-                 size: 16,
+                 size: 14,
                },
                padding: {
                  bottom: 30,
@@ -188,4 +164,384 @@ const quantity2 = new Chart(ctx_3, {
                 }
     },
     }
+});
+
+const ctx_4 = document.getElementById('stakeholderbar').getContext('2d');
+const stakeholderbar = new Chart(ctx_4, {
+    type: 'bar',
+    data: {
+      labels: [
+        'Малая автоматизация рабочих процессов',
+        'Не хватает ресурсов на выполнение новых задач',
+        'Излишняя бюрократия',
+        'Отсутствие мобильного рабочего места',
+        'ИОГВ и ОМС не тиражируют успешный опыт',
+        'Служащие не заитересованы в совер. процессов',
+        'Нет понимания общей цели ("тушеним пожары")',
+        'Отсутствуют цифровые компетенции у специалистов',
+        'Сложность коммуникаций между ОСП (иерархия власти)'
+        ],
+      datasets: [{
+        axis: 'y',
+        label: '',
+        data: [20, 10, 8, 8, 8, 6, 5, 5, 5],
+        fill: false,
+        backgroundColor: [
+           'rgba(255, 99, 132, 0.8)',
+           'rgb(255, 205, 86, 0.8)',
+           'rgb(255, 205, 86, 0.8)',
+           'rgb(255, 205, 86, 0.8)',
+           'rgb(255, 205, 86, 0.8)',
+           'rgb(255, 205, 86, 0.8)',
+           'rgb(255, 205, 86, 0.8)',
+           'rgb(255, 205, 86, 0.8)',
+           'rgb(255, 205, 86, 0.8)',
+         ],
+        borderColor: [
+            'rgb(255, 99, 132)',
+            'rgb(255, 159, 64)',
+            'rgb(255, 205, 86)',
+            'rgb(75, 192, 192)',
+            'rgb(54, 162, 235)',
+            'rgb(153, 102, 255)',
+            'rgb(201, 203, 207)',
+            'rgb(215, 93, 144)',
+            'rgb(180, 221, 211)'
+        ],
+        borderWidth: 0,
+        hoverOffset: 10
+}]
+    },
+    options: {
+      scales: {
+        x: {
+          display: false
+          },
+        y: {
+          // display: false,
+          grid: {
+            display: false
+          },
+          ticks: {
+            crossAlign: 'far'
+          },
+        },
+      },
+      indexAxis: 'y',
+      plugins: {
+        datalabels: {
+          // anchor: 'end',
+          // align: 'right',
+          // offset: '15',
+          formatter: function(value, context) {
+            return value + '%';
+          },
+          // color: 'white',
+          font: {
+            family: "PT Serif",
+            weight: 'bold',
+            size: '14'
+          }
+        },
+        legend: {
+             display: false,
+        },
+        title: {
+            display: true,
+            text: 'Боли "Стейкхолдеров" (% от опрошенных)',
+            position: 'top',
+            font: {
+              size: 14,
+            },
+            padding: {
+              bottom: 30,
+            }
+        },
+      }
+    },
+    plugins: [ChartDataLabels]
+});
+
+// const ctx_41 = document.getElementById('stakeholderbar_phone').getContext('2d');
+// const stakeholderbar_phone = new Chart(ctx_41, {
+//     type: 'bar',
+//     data: {
+//       labels: [
+//         'Малая автоматизация рабочих процессов',
+//         'Не хватает ресурсов на выполнение новых задач',
+//         'Излишняя бюрократия',
+//         'Отсутствие мобильного рабочего места',
+//         'ИОГВ и ОМС не тиражируют успешный опыт',
+//         'Служащие не заитересованы в совершенствовании процессов',
+//         'Нет понимания общей цели (зациклены на "тушении пожаров")',
+//         'Отсутствуют цифровые компетенции у специалистов',
+//         'Сложность коммуникаций между ОСП (иерархия власти)'
+//         ],
+//       datasets: [{
+//         axis: 'y',
+//         label: '',
+//         data: [20, 10, 8, 8, 8, 6, 5, 5, 5],
+//         fill: false,
+//         backgroundColor: [
+//            'rgba(255, 99, 132, 0.4)',
+//            'rgba(255, 159, 64, 0.4)',
+//            'rgba(255, 205, 86, 0.4)',
+//            'rgba(75, 192, 192, 0.4)',
+//            'rgba(54, 162, 235, 0.4)',
+//            'rgba(153, 102, 255, 0.4)',
+//            'rgba(201, 203, 207, 0.4)',
+//            'rgb(215, 93, 144, 0.4)',
+//            'rgb(180, 221, 211, 0.4)'
+//          ],
+//         borderColor: [
+//             'rgb(255, 99, 132)',
+//             'rgb(255, 159, 64)',
+//             'rgb(255, 205, 86)',
+//             'rgb(75, 192, 192)',
+//             'rgb(54, 162, 235)',
+//             'rgb(153, 102, 255)',
+//             'rgb(201, 203, 207)',
+//             'rgb(215, 93, 144)',
+//             'rgb(180, 221, 211)'
+//         ],
+//         borderWidth: 0,
+//         hoverOffset: 10
+// }]
+//     },
+//     options: {
+//       scales: {
+//         x: {
+//           display: false,
+//           ticks: {
+//             font: {
+//               size: 14,
+//             }
+//           }
+//         },
+//         y: {
+//           display: false,
+//           grid: {
+//             display: false
+//           },
+//           ticks: {
+//             crossAlign: 'far',
+//             font: {
+//               size: 10,
+//             }
+//           },
+//         },
+//       },
+//       indexAxis: 'y',
+//       plugins: {
+//         datalabels: {
+//           // anchor: 'end',
+//           // align: 'right',
+//           // offset: '15',
+//           formatter: function(value, context) {
+//             return value + '%';
+//           },
+//           font: {
+//             family: "PT Serif",
+//             weight: 'regular',
+//             size: '8'
+//           }
+//         },
+//         legend: {
+//              display: false,
+//         },
+//         title: {
+//             display: true,
+//             text: 'Боли "Стейкхолдеров" (% от опрошенных)',
+//             position: 'top',
+//             font: {
+//               size: 14,
+//             },
+//             padding: {
+//               bottom: 30,
+//             }
+//         },
+//       }
+//     },
+//     plugins: [ChartDataLabels]
+// });
+
+
+
+const ctx_5 = document.getElementById('stakeholderbar2').getContext('2d');
+const stakeholderbar2 = new Chart(ctx_5, {
+    type: 'bar',
+    data: {
+      labels: [
+        'ВХД',
+        'ИСХ',
+        'ВНД',
+        'ОРД'
+        ],
+      datasets: [{
+         axis: 'y',
+         label: '',
+         data: [88238, 57856, 59570, 12892],
+         fill: false,
+         backgroundColor: [
+           'rgba(255, 99, 132, 0.8)',
+           'rgba(255, 205, 86, 0.8)',
+           'rgba(255, 205, 86, 0.8)',
+           'rgb(122, 233, 154, 0.8)'
+         ],
+         borderColor: [
+            'rgb(255, 99, 132)',
+            'rgb(255, 159, 64)',
+            'rgb(255, 205, 86)',
+            'rgb(75, 192, 192)'
+        ],
+  borderWidth:0
+}]
+    },
+    options: {
+      scales: {
+        x: {
+          // display: false
+          grid: {
+            display: false
+          },
+          },
+        y: {
+          display: false,
+          grid: {
+            display: false
+          },
+        },
+      },
+      indexAxis: 'x',
+      plugins: {
+        datalabels: {
+          anchor: 'end',
+          align: 'top',
+          offset: '10',
+          font: {
+            family: "PT Serif",
+            weight: 'bold',
+            size: '14'
+          }
+        },
+        legend: {
+             display: false,
+        },
+        title: {
+            display: true,
+            text: 'Документооборот (1 кв. 2022 года)',
+            position: 'top',
+            font: {
+              size: 14,
+            },
+            padding: {
+              bottom: 50,
+            }
+        },
+      }
+    },
+    plugins: [ChartDataLabels]
+});
+
+const ctx_41 = document.getElementById('stakeholderbar_phone').getContext('2d');
+const stakeholderbar_phone = new Chart(ctx_41, {
+    type: 'polarArea',
+    data: {
+      labels: [
+        'Малая автоматизация рабочих процессов',
+        'Не хватает ресурсов на выполнение новых задач',
+        'Излишняя бюрократия',
+        'Отсутствие мобильного рабочего места',
+        'ИОГВ и ОМС не тиражируют успешный опыт',
+        'Служащие не заитересованы в совер. процессов',
+        'Нет понимания общей цели ("тушеним пожары")',
+        'Отсутствуют цифровые компетенции у специалистов',
+        'Сложность коммуникаций между ОСП (иерархия власти)'
+        ],
+      datasets: [{
+        axis: 'y',
+        label: '',
+        data: [20, 10, 8, 8, 8, 6, 5, 5, 5],
+        fill: false,
+        backgroundColor: [
+           'rgba(255, 99, 132, 0.8)',
+           'rgba(255, 159, 64, 0.8)',
+           'rgba(255, 205, 86, 0.8)',
+           'rgba(75, 192, 192, 0.8)',
+           'rgba(54, 162, 235, 0.8)',
+           'rgba(153, 102, 255, 0.8)',
+           'rgba(201, 203, 207, 0.8)',
+           'rgb(215, 93, 144, 0.8)',
+           'rgb(180, 221, 211, 0.8)'
+         ],
+        borderColor: [
+            'rgb(255, 99, 132)',
+            'rgb(255, 159, 64)',
+            'rgb(255, 205, 86)',
+            'rgb(75, 192, 192)',
+            'rgb(54, 162, 235)',
+            'rgb(153, 102, 255)',
+            'rgb(201, 203, 207)',
+            'rgb(215, 93, 144)',
+            'rgb(180, 221, 211)'
+        ],
+        borderWidth: 0,
+        hoverOffset: 10
+}]
+    },
+    options: {
+      scales: {
+        r: {
+          display: false,
+          ticks: {
+            font: {
+              size: 14,
+            }
+          }
+        },
+        y: {
+          display: false,
+          grid: {
+            display: false
+          },
+          ticks: {
+            crossAlign: 'far',
+            font: {
+              size: 10,
+            }
+          },
+        },
+      },
+      indexAxis: 'y',
+      plugins: {
+        datalabels: {
+          anchor: 'end',
+          align: 'end',
+          offset: '5',
+          formatter: function(value, context) {
+            return value + '%';
+          },
+          font: {
+            family: "PT Serif",
+            // weight: 'bold',
+            size: '12'
+          }
+        },
+        legend: {
+             display: false,
+        },
+        title: {
+            display: true,
+            text: 'Боли "Стейкхолдеров" (% от опрошенных)',
+            position: 'top',
+            font: {
+              size: 14,
+            },
+            padding: {
+              bottom: 30,
+            }
+        },
+      }
+    },
+    plugins: [ChartDataLabels]
 });
