@@ -35,7 +35,7 @@ body {
 }
 
 .header-logo {
-  width: 190px;
+  width: 300px;
 }
 
 .logo {
@@ -47,7 +47,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #00001e;
+  color: #11496D;
 }
 
 .menu-box {
@@ -79,7 +79,7 @@ body {
   font-size: 16px;
   text-align: center;
   text-decoration: none;
-  color: #00001e;
+  color: #11496D;
   position: relative;
 }
 
@@ -360,22 +360,20 @@ body {
 }
 
 .popup {
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 80%;
   background-color: #ffffff;
-  padding: 20px 20px;
+  padding: 0 10px;
   position: relative;
-  /* color: #00001e;
-  font-weight: 700;
-  font-family: "PT Serif", Arial, sans-serif;
-  text-align: center; */
   border-radius: 10px;
-  /* margin-left: auto;
-  margin-right: auto; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   overflow-x: scroll;
+}
+
+.proekt1 {
+  width: 100%;
 }
 
 .hidden-popup::after {
@@ -435,7 +433,7 @@ body {
   }
 
   .header-logo {
-    width: 150px;
+    width: 200px;
     margin-right: 0;
   }
 
@@ -521,11 +519,10 @@ body {
   .button-submit, .theme, .stage {
     font-size: 14px;
     line-height: 30px;
-
   }
 
   .button-submit:nth-child(2) {
-    margin-left: 30px;
+    margin-left: 60px;
   }
 
   .button-submit, .stage {
@@ -556,3 +553,9 @@ body {
   .popup {
     width: 90%;
   }
+
+  .registry {
+    width: 90%;
+    height: 820px;
+  }
+}
