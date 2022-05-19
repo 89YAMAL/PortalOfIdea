@@ -148,11 +148,11 @@ body {
 }
 
 .button-submit:focus {
-  background-color: rgb(228, 108, 10);
+  background-color: rgb(66, 62, 59);
 }
 
 .button-submit:hover {
-  background-color: rgb(228, 108, 10);
+  background-color: rgb(66, 62, 59);
 }
 
 .button-submit:nth-child(2) {

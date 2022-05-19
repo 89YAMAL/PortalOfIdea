@@ -200,12 +200,12 @@ body {
 }
 
 .button-submit:focus {
-  outline: 2px solid rgb(228, 108, 10);
-  background-color: rgb(228, 108, 10);
+  outline: 2px solid rgb(66, 62, 59);
+  background-color: rgb(66, 62, 59);
 }
 
 .button-submit:hover {
-  background-color: rgb(228, 108, 10);
+  background-color: rgb(66, 62, 59);
 }
 
 .footer {
