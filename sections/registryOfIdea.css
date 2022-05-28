@@ -374,6 +374,7 @@ body {
 
 .proekt1 {
   width: 100%;
+
 }
 
 .hidden-popup::after {
@@ -556,6 +557,29 @@ body {
 
   .registry {
     width: 90%;
-    height: 820px;
+    height: 900px;
+  }
+
+  .theme {
+    font-size: 13px;
+    line-height: normal;
+    align-self: center;
+  }
+
+  .stage {
+    min-width: 130px;
+    margin-left: 10px;
+    font-size: 13px;
+
+  }
+}
+
+@media (max-width: 415px) {
+  .proekt1 {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:  translate(-50%, -50%);
   }
 }
